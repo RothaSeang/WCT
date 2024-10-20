@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Media Controls</title>
+</head>
+<body>
+
+<h2>Favorite Hobby Video</h2>
+<!-- Embedded YouTube video -->
+<iframe id="youtubeVideo" width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+
+<!-- Custom Video Controls -->
+<div>
+    <button onclick="playVideo()">Play</button>
+    <button onclick="pauseVideo()">Pause</button>
+</div>
+
+<h2>Audio Clip</h2>
+<!-- Embedded Audio file -->
+<audio id="audioClip">
+    <source src="path_to_your_audio_file.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+</audio>
+
+<!-- Custom Audio Controls -->
+<div>
+    <button onclick="playAudio()">Play</button>
+    <button onclick="pauseAudio()">Pause</button>
+    <label for="volumeControl">Volume: </label>
+    <input type="range" id="volumeControl" min="0" max="1" step="0.1" onchange="setVolume(this.value)">
+</div>
+
+<script>
+    // Video Controls (Using YouTube API)
+    function playVideo() {
+        const iframe = document.getElementById("youtubeVideo");
+        iframe.src += "&autoplay=1";
+    }
+
+    function pauseVideo() {
+        const iframe = document.getElementById("youtubeVideo");
+        iframe.src = iframe.src.replace("&autoplay=1", "");
+    }
+
+    // Audio Controls
+    var audio = document.getElementById('audioClip');
+
+    function playAudio() {
+        audio.play();
+    }
+
+    function pauseAudio() {
+        audio.pause();
+    }
+
+    function setVolume(value) {
+        audio.volume = value;
+    }
+</script>
+
+</body>
+</html>

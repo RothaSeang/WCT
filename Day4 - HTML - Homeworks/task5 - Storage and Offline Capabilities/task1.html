@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncing Ball Game</title>
+    <style>
+        canvas {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+
+<canvas id="gameCanvas" width="500" height="500"></canvas>
+
+<script>
+    var canvas = document.getElementById("gameCanvas");
+    var ctx = canvas.getContext("2d");
+
+    var x = canvas.width / 2;
+    var y = canvas.height / 2;
+    var dx = 2;
+    var dy = 2;
+    var ballRadius = 20;
+
+    function getRandomColor() {
+        var letters = '0123456789ABCDEF';
+        var color = '#';
+        for (var i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+    }
+
+    var ballColor = getRandomColor();
+
+    function drawBall() {
+        ctx.beginPath();
+        ctx.arc(x, y, ballRadius, 0, Math.PI * 2);
+        ctx.fillStyle = ballColor;
+        ctx.fill();
+        ctx.closePath();
+    }
+
+    function update() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        drawBall();
+
+        // Bouncing off the edges
+        if (x + dx > canvas.width - ballRadius || x + dx < ballRadius) {
+            dx = -dx;
+            ballColor = getRandomColor(); // Change color on edge hit
+        }
+        if (y + dy > canvas.height - ballRadius || y + dy < ballRadius) {
+            dy = -dy;
+            ballColor = getRandomColor(); // Change color on edge hit
+        }
+
+        x += dx;
+        y += dy;
+    }
+
+    setInterval(update, 10); // Updates the ball position every 10ms
+</script>
+
+</body>
+</html>
