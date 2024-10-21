@@ -8,22 +8,16 @@
 <body>
 
 <h2>Favorite Hobby Video</h2>
-<!-- Embedded YouTube video -->
-<iframe id="youtubeVideo" width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" 
-        title="YouTube video player" frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen></iframe>
+<div id="youtubeVideo"></div>
 
-<!-- Custom Video Controls -->
 <div>
     <button onclick="playVideo()">Play</button>
     <button onclick="pauseVideo()">Pause</button>
 </div>
 
 <h2>Audio Clip</h2>
-<!-- Embedded Audio file -->
-<audio id="audioClip">
-    <source src="path_to_your_audio_file.mp3" type="audio/mp3">
+<audio id="audioClip" controls>
+    <source src="/assets/ah.mp3" type="audio/mp3">
     Your browser does not support the audio element.
 </audio>
 
@@ -36,15 +30,34 @@
 </div>
 
 <script>
-    // Video Controls (Using YouTube API)
+    // Load the YouTube IFrame API script dynamically
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    var player;
+    function onYouTubeIframeAPIReady() {
+        player = new YT.Player('youtubeVideo', {
+            height: '315',
+            width: '560',
+            videoId: 'M7lc1UVf-VE', // The updated YouTube video ID
+            events: {
+                'onReady': onPlayerReady
+            }
+        });
+    }
+
+    function onPlayerReady(event) {
+        // Player is ready
+    }
+
     function playVideo() {
-        const iframe = document.getElementById("youtubeVideo");
-        iframe.src += "&autoplay=1";
+        player.playVideo();
     }
 
     function pauseVideo() {
-        const iframe = document.getElementById("youtubeVideo");
-        iframe.src = iframe.src.replace("&autoplay=1", "");
+        player.pauseVideo();
     }
 
     // Audio Controls

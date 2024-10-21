@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Information Form with Validation</title>
+    <title>User Information Form</title>
     <style>
         form {
             max-width: 400px;
@@ -21,15 +21,11 @@
             padding: 8px;
             font-size: 16px;
         }
-        .error {
-            color: red;
-            font-size: 14px;
-        }
     </style>
 </head>
 <body>
 
-<h2>User Information Form with Validation</h2>
+<h2>User Information Form</h2>
 
 <form id="userInfoForm">
     <label for="name">Name:</label>
@@ -37,48 +33,12 @@
 
     <label for="email">Email:</label>
     <input type="email" id="email" name="email" placeholder="Enter your email" required>
-    <span id="emailError" class="error"></span>
 
     <label for="phone">Phone Number:</label>
-    <input type="text" id="phone" name="phone" placeholder="Enter your phone number" required pattern="\d+">
-    <span id="phoneError" class="error"></span>
+    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" pattern="[0-9]{10}" title="Please enter a 10-digit phone number" required>
 
     <button type="submit">Submit</button>
 </form>
-
-<script>
-    const form = document.getElementById('userInfoForm');
-    const emailInput = document.getElementById('email');
-    const phoneInput = document.getElementById('phone');
-    const emailError = document.getElementById('emailError');
-    const phoneError = document.getElementById('phoneError');
-
-    form.addEventListener('submit', function(event) {
-        let valid = true;
-
-        // Validate email
-        const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-        if (!emailPattern.test(emailInput.value)) {
-            emailError.textContent = "Please enter a valid email address.";
-            valid = false;
-        } else {
-            emailError.textContent = "";
-        }
-
-        // Validate phone number (must be numeric)
-        const phonePattern = /^[0-9]+$/;
-        if (!phonePattern.test(phoneInput.value)) {
-            phoneError.textContent = "Phone number must be numeric.";
-            valid = false;
-        } else {
-            phoneError.textContent = "";
-        }
-
-        if (!valid) {
-            event.preventDefault();
-        }
-    });
-</script>
 
 </body>
 </html>
