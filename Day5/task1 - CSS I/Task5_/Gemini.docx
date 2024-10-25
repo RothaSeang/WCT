@@ -1,0 +1,10 @@
+Task 5: Style on HTML
+
+Inline Styles: Styles are applied directly to HTML elements using the style attribute.
+Example:
+HTML
+<p style="color: blue; font-size: 18px;">This is a paragraph with inline styles.</p>
+
++ Pros and Cons:
+      - Pros: Easy to apply specific styles to individual elements.
+      - Cons: Can clutter HTML code, makes maintenance difficult, and violates separation of concerns.

@@ -1,0 +1,46 @@
+Task 3: CSS Selectors
+
+Definition and Usage: CSS selectors are used to target specific HTML elements based on their tags, classes, IDs, attributes, or pseudo-classes.
+Example:
+HTML
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Selectors</title>
+    <style>
+        p {
+            color: green;
+        }
+
+        .special {
+            font-weight: bold;
+        }
+
+        #heading {
+            text-align: center;
+        }
+
+        [href] {
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading">Heading</h1>
+    <p>This is a regular paragraph.</p>
+    <p class="special">This is a special paragraph.</p>
+    <a href="https://example.com">Link</a>
+</body>
+</html>
+
+- Explanation:
+      - p: Targets all paragraph elements.
+      - .special: Targets elements with the class "special".
+      - #heading: Targets the element with the ID "heading".
+      - [href]: Targets elements with the attribute "href".
+      - a:hover: Targets anchor elements when hovered over.

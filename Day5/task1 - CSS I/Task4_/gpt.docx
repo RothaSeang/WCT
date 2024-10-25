@@ -1,3 +1,7 @@
-Task 1: CSS Basics
-Definition: CSS (Cascading Style Sheets) is used to style HTML elements, providing control over layout, colors, fonts, and overall presentation.
-Role in Web Development: CSS separates content (HTML) from presentation (CSS), allowing for cleaner, more maintainable code and enabling flexible design.
+ 4: How to Debug CSS
+Use browser developer tools to inspect elements and view applied styles:
+
+      1. Right-click an element and select Inspect.
+      2. View Styles to see applied CSS and identify issues.
+      3. Test CSS changes live in the Styles pane.
+Example: If a color is not appearing as expected, check the Specificity or Cascade Order in the developer tools to resolve conflicting styles.

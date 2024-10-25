@@ -1,0 +1,13 @@
+Task 4: How to Debug CSS
+
+ + Common Issues and Debugging:
+      - Missing or incorrect selectors: Check for typos and ensure selectors match the correct elements.
+      - Conflicting styles: Use browser developer tools to inspect elements and identify conflicting styles.
+      - Specificity issues: Understand CSS specificity rules to determine which styles take precedence.
+ + Step-by-Step Guide:
+      1. Open the web page in a browser.
+      2. Right-click on an element and select "Inspect" (or use the developer tools shortcut).
+      3. Examine the element's style properties in the inspector.
+      4. Identify any conflicting or incorrect styles.
+      5. Modify the CSS code and refresh the page to see the changes.
+ - Example: If a paragraph element is not displaying correctly, inspect its styles in the developer tools to check for conflicting font-family or color properties.

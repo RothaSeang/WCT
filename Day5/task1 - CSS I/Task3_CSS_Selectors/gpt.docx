@@ -1,3 +1,8 @@
-Task 1: CSS Basics
-Definition: CSS (Cascading Style Sheets) is used to style HTML elements, providing control over layout, colors, fonts, and overall presentation.
-Role in Web Development: CSS separates content (HTML) from presentation (CSS), allowing for cleaner, more maintainable code and enabling flexible design.
+Task 3: CSS Selectors
+Selectors allow targeting of HTML elements:
+
+- Element Selector targets all instances of a tag: p { color: red; }
+- Class Selector applies to elements with a specific class: .myClass { color: green; }
+- ID Selector targets a unique element: #myId { font-weight: bold; }
+- Attribute Selector matches elements with an attribute: [type="text"] { border: 1px solid; }
+- Pseudo-Class Selector targets elements in specific states: a:hover { color: orange; }

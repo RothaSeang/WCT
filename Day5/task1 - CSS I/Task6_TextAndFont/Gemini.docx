@@ -1,0 +1,12 @@
+Task 6: Text and Font
+
++ Styling Text and Fonts:
+      - font-family : Sets the font family.
+      - font-size : Sets the font size.
+      - font-weight : Sets the font weight (e.g., normal, bold).
+      - text-align : Sets the text alignment (e.g., left, center, right).
+Example:
+HTML
+<h1>Heading</h1>
+<p>This is a paragraph with regular text.</p>
+<p style="font-family: Arial; font-size: 20px; font-weight: bold;">This is a bold paragraph.</p>

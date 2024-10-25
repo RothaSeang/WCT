@@ -1,3 +1,10 @@
-Task 1: CSS Basics
-Definition: CSS (Cascading Style Sheets) is used to style HTML elements, providing control over layout, colors, fonts, and overall presentation.
-Role in Web Development: CSS separates content (HTML) from presentation (CSS), allowing for cleaner, more maintainable code and enabling flexible design.
+Task 6: Text and Font
+CSS text properties:
+
+css
+h1 {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
