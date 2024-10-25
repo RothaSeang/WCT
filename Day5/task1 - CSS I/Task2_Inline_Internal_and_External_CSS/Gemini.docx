@@ -1,0 +1,30 @@
+Task 2: Inline, Internal, and External CSS
+
+Differences:
+- Inline: Styles are applied directly to HTML elements using the style attribute.
+- Internal: Styles are defined within the <head> section of the HTML document using <style> tags.
+- External: Styles are defined in a separate CSS file linked to the HTML document using the <link> tag.
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Styles</title>
+    <style>
+        /* Internal CSS */
+        h1 {
+            color: red;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css"> </head>
+<body>
+    <h1 style="color: blue;">Inline CSS</h1>
+    <h1>Internal CSS</h1>
+    <p>Text with external CSS</p>
+</body>
+</html>
+
+Advantages and Disadvantages:
+- Inline: Easy to apply styles to individual elements, but can clutter HTML code.
+- Internal: Centralizes styles within the HTML document, but can make maintenance difficult for large projects.
+- External: Separates structure from presentation, improves readability, and facilitates code reuse.

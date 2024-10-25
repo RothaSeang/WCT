@@ -1,0 +1,22 @@
+Task 2: Inline, Internal, and External CSS
+Inline CSS: Styles applied directly on elements using the style attribute.
+
+html:
+<p style="color: blue;">This text is blue.</p>
+
+- Internal CSS: Styles defined within a <style> tag in the HTML <head>.
+
+html:
+<style>
+    p { color: green; }
+</style>
+
+- External CSS: Styles defined in an external file and linked in the HTML file.
+
+html:
+<link rel="stylesheet" href="styles.css">
+
+Advantages:
+- External: Reusable, centralized styles.
+- Internal: Useful for page-specific styles.
+- Inline: Fast styling for single elements (use sparingly).
