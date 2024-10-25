@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme Color Selector</title>
+    <style>
+        body {
+            transition: background-color 0.3s ease;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+        label, button {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+        input[type="color"] {
+            width: 50px;
+            height: 30px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Choose Your Background Color</h1>
+    <label for="color">Select Color:</label>
+    <input type="color" id="color" name="color" value="#ffffff">
+    <button onclick="saveColor()">Save Color</button>
+</div>
+
+<script>
+    // Apply the saved color from localStorage when the page loads
+    function applySavedColor() {
+        const savedColor = localStorage.getItem('bgColor');
+        if (savedColor) {
+            document.body.style.backgroundColor = savedColor;
+            document.getElementById('color').value = savedColor; // Set color picker to saved color
+        }
+    }
+
+    // Save the selected color to localStorage and apply it
+    function saveColor() {
+        const color = document.getElementById('color').value;
+        localStorage.setItem('bgColor', color);
+        document.body.style.backgroundColor = color;
+    }
+
+    // Call the function to apply the saved color on page load
+    applySavedColor();
+</script>
+
+</body>
+</html>
