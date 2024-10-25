@@ -1,5 +1,31 @@
 CSS Basics
 
-CSS Definition: CSS (Cascading Style Sheets) is a language used to style HTML elements. It controls the appearance of web pages, including colors, fonts, layout, and more.
-Role in Web Development: CSS adds visual appeal and structure to web pages, making them more engaging and user-friendly.
-HTML Document and CSS Stylesheet:
+CSS (Cascading Style Sheets) is a language used to style HTML elements.
+It controls the appearance of web pages, including colors, fonts, layout, and spacing.
+
+HTML Document with Basic CSS:
+HTML:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First CSS Page</title>
+    <style>
+        body {
+            background-color: lightblue;
+            color: white;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+</body>
+</html>
+
+Explanation of CSS Code:
+
+- body { ... }: Selects the <body> element of the HTML document.
+- background-color: lightblue;: Sets the background color of the <body> to light blue.
+- color: white;: Sets the text color of the <body> to white.
+- font-size: 24px;: Sets the font size of the <body> to 24 pixels.
