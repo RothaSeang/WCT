@@ -1,3 +1,8 @@
-Task 1: CSS Basics
-Definition: CSS (Cascading Style Sheets) is used to style HTML elements, providing control over layout, colors, fonts, and overall presentation.
-Role in Web Development: CSS separates content (HTML) from presentation (CSS), allowing for cleaner, more maintainable code and enabling flexible design.
+Task 12: Flexbox
+Flexbox is a layout model for responsive design.
+
+ CSS
+.container {
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,39 @@
+Task 12: Flexbox
+
+Flexbox is a powerful layout model that allows you to arrange items flexibly within a container. It's especially useful for creating responsive designs.
+
+Key Flexbox Properties:
+
+- flex-direction: Controls the main-axis direction (row or column).
+- justify-content: Aligns items along the main axis.
+- align-items: Aligns items along the cross axis.
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flexbox Layout</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row; /* Change to column for vertical layout */
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .box {
+            border: 1px solid black;
+            padding: 20px;
+            width: 30%;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+</body>
+</html>

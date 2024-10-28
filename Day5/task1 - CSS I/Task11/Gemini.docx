@@ -1,0 +1,71 @@
+Task 11: Table and <div> for Layout
+
+Tables:
+
+Traditionally used for tabular data.
+- Can be used for layout, but can be less flexible and harder to style than div elements.
+- Best suited for data that is organized in rows and columns.
+- Div Elements:
+
+More flexible and versatile for layout.
+- Can be styled with CSS to create complex layouts.
+- Often preferred for modern web design.
+ Example:
+ 
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>Table and Div Layout</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .box {
+            border: 1px solid black;
+            padding: 20px;
+            width: 30%;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Table Layout</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>City</th>
+        </tr>
+        <tr>
+            <td>Alice</td>
+            <td>25</td>
+            <td>New York</td>
+        </tr>
+        <tr>
+            <td>Bob</td>
+            <td>30</td>
+            <td>Los Angeles</td>
+        </tr>
+    </table>
+
+    <h2>Div Layout</h2>
+    <div class="container">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+</body>
+</html>

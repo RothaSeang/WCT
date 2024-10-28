@@ -1,0 +1,14 @@
+Task 7: Online Fonts and Favicon
+      - Online Fonts: Add Google Fonts using a <link> in the HTML head.
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+In CSS
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+      - Favicon: Adds an icon to the browser tab.
+
+<link rel="icon" href="favicon.ico" type="image/x-icon">

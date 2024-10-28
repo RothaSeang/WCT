@@ -1,0 +1,21 @@
+Task 9: Alignment and Display
+
+ Text Alignment:
+- text-align: left;
+- text-align: center;
+- text-align: right;
+ Vertical Alignment:
+- vertical-align: top;
+- vertical-align: middle;
+- vertical-align: bottom;   
+ Display Properties:
+- display: block;
+- display: inline;
+- display: inline-block;
+- display: flex;
+
+Example:
+<div style="display: flex; justify-content: space-between;">
+    <div style="background-color: lightblue; width: 200px; height: 200px;">Div 1</div>
+    <div style="background-color: lightgreen; width: 200px; height: 200px;">Div 2</div>
+</div>

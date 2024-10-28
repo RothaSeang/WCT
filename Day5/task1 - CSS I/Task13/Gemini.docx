@@ -1,0 +1,20 @@
+Task 13: CSS Variables
+
+CSS variables, also known as custom properties, allow you to define reusable values that can be used throughout your stylesheet. This helps maintain consistency and makes it easier to update styles.   
+
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+To change the primary color, you only need to modify the --primary-color variable in the root element.

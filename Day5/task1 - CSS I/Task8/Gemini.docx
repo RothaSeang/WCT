@@ -1,0 +1,19 @@
+Task 8: Color and Background
+
+Color:
+- Hex: #FF0000 (red)
+- RGB: rgb(255, 0, 0) (red)
+- HSL: hsl(0, 100%, 50%) (red)
+Background:
+- Solid color: background-color: #FF0000;
+- Gradient: background: linear-gradient(to right, #FF0000, #00FF00);
+- Image: background-image: url('image.jpg');
+
+ Example:
+<div style="background-color: #FF0000; color: white;">
+    This div has a red background.
+</div>
+
+<div style="background: linear-gradient(to right, #FF0000, #00FF00);">
+    This div has a gradient background.
+</div>

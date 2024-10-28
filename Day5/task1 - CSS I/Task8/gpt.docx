@@ -1,3 +1,13 @@
-Task 1: CSS Basics
-Definition: CSS (Cascading Style Sheets) is used to style HTML elements, providing control over layout, colors, fonts, and overall presentation.
-Role in Web Development: CSS separates content (HTML) from presentation (CSS), allowing for cleaner, more maintainable code and enabling flexible design.
+Task 8: Color and Background
+CSS for color and background:
+
+css
+
+body {
+    background-color: #ffebcd;
+    color: rgb(34, 34, 34);
+}
+
+div.gradient {
+    background: linear-gradient(to right, red, yellow);
+}

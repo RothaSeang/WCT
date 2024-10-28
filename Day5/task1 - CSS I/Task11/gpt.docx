@@ -1,3 +1,12 @@
-Task 1: CSS Basics
-Definition: CSS (Cascading Style Sheets) is used to style HTML elements, providing control over layout, colors, fonts, and overall presentation.
-Role in Web Development: CSS separates content (HTML) from presentation (CSS), allowing for cleaner, more maintainable code and enabling flexible design.
+Task 11: Table and <div>
+Table: For tabular data
+
+html
+<table>
+  <tr><th>Name</th><th>Age</th></tr>
+  <tr><td>Alice</td><td>30</td></tr>
+</table>
+Div: For layout grouping and styling.
+
+html
+<div class="container">Content here</div>

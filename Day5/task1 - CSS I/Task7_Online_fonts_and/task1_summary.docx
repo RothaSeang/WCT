@@ -1,0 +1,5 @@
+Gemini offers a straightforward approach to including fonts and favicons but lacks some optimizations.
+
+GPT provides a more modern and detailed implementation, including CSS usage and better practices for loading Google Fonts and defining favicons.
+
+Both cover the basic concepts of online fonts and favicons, but GPT presents a more refined and practical approach.

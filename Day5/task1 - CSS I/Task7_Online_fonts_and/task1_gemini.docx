@@ -1,0 +1,20 @@
+Task 7: Online Fonts and Favicon
+
+- Online Fonts: Fonts hosted on external servers that can be integrated into a website using CSS.
+- Google Fonts: A popular service for accessing a wide range of fonts.
+- Favicon: A small image used to represent a website in browser tabs and bookmarks.
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Fonts and Favicon</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+<body>   
+
+    <h1>Heading</h1>
+    <p>This text is using the Roboto font.</p>
+</body>
+</html>
