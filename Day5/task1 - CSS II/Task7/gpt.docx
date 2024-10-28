@@ -1,3 +1,13 @@
-Task 1: CSS Basics
-Definition: CSS (Cascading Style Sheets) is used to style HTML elements, providing control over layout, colors, fonts, and overall presentation.
-Role in Web Development: CSS separates content (HTML) from presentation (CSS), allowing for cleaner, more maintainable code and enabling flexible design.
+Task 7: Grid System and Breakpoints
+A CSS grid system helps in creating responsive layouts. Frameworks like Bootstrap provide a 12-column grid system with breakpoints.
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}

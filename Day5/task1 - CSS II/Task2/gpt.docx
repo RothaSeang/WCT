@@ -1,3 +1,38 @@
-Task 1: CSS Basics
-Definition: CSS (Cascading Style Sheets) is used to style HTML elements, providing control over layout, colors, fonts, and overall presentation.
-Role in Web Development: CSS separates content (HTML) from presentation (CSS), allowing for cleaner, more maintainable code and enabling flexible design.
+Task 2: Compilation
+CSS Compilation with Preprocessors
+CSS compilation is the process by which a CSS preprocessor like Sass or LESS converts its custom syntax into standard CSS. This compiled CSS file is what the browser can read and render.
+
+Steps for Compiling Sass to CSS
+1. Write Sass Code: Use .scss or .sass files.
+2. Compile: Run the preprocessor to convert Sass to CSS (e.g., sass input.scss output.css).
+3. Link Compiled CSS: Use the output CSS file in your HTML.
+Example: Sass Code and Compiled Output
+Sass Code (style.scss)
+$font-size: 16px;
+
+.container {
+  font-size: $font-size;
+
+  .button {
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    &:hover {
+      background-color: darken(blue, 10%);
+    }
+  }
+}
+Compiled CSS
+.container {
+  font-size: 16px;
+}
+
+.container .button {
+  padding: 10px;
+  background-color: blue;
+  color: white;
+}
+
+.container .button:hover {
+  background-color: #0000cc;
+}

@@ -1,0 +1,47 @@
+Task 4: Variables, Functions, and Inheritance
+
+Variables:
+Sass allows you to declare variables to store values that can be reused throughout your stylesheet. This helps maintain consistency and makes it easier to update styles.
+
+Example:
+
+$primary-color: #007bff;
+
+.button {
+  background-color: $primary-color;
+  color: white;
+  padding: 10px 20px;
+}
+Functions:
+Sass functions allow you to define reusable blocks of code that can take arguments and return a value. This can be useful for complex calculations or style transformations.
+Example:
+
+@function lighten($color, $amount) {
+  @return lighten($color, $amount * 1%);
+}
+
+.card {
+  background-color: lighten(#f0f0f0, 20);
+}
+Inheritance:
+Sass supports inheritance through the use of mixins. Mixins allow you to define a set of CSS properties that can be included in other selectors.
+
+Example:
+
+@mixin button-style {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+.primary-button {
+  @include button-style;
+  background-color: #007bff;
+  color: white;
+}
+
+.secondary-button {
+  @include button-style;
+  background-color: #f0f0f0;
+  color: black;
+}

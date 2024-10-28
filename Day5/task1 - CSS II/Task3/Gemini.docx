@@ -1,0 +1,77 @@
+Task 3: Sass Basics
+
+Sass is a CSS preprocessor that extends CSS with features like nesting, variables, functions, mixins, and more.
+
+Example of Sass with nesting, partials, and imports:
+// styles.scss
+@import 'partials/base';
+@import 'partials/layout';
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+}
+// partials/_base.scss
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+// partials/_layout.scss
+header {
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+footer {
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+}
+Compiled CSS:
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body .container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+footer {
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+}
+Notable differences from standard CSS:
+
+- Nesting: Sass allows you to nest selectors, making CSS more readable and organized.
+- Partials: You can split your Sass code into smaller files for better organization.
+- Imports: You can import other Sass files into your main file.

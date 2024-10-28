@@ -1,0 +1,3 @@
+Task 3: Sass Basics
+- GPT: Demonstrates Sass basics (nesting, partials, imports) with a slightly complex layout using nested body and content classes.
+- Gemini: Shows the same Sass basics but with a simpler setup, using only a container class and a couple of basic partials.

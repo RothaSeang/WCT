@@ -1,3 +1,35 @@
-Task 1: CSS Basics
-Definition: CSS (Cascading Style Sheets) is used to style HTML elements, providing control over layout, colors, fonts, and overall presentation.
-Role in Web Development: CSS separates content (HTML) from presentation (CSS), allowing for cleaner, more maintainable code and enabling flexible design.
+Task 4: Variables, Functions, and Inheritance
+Variables and Functions in Sass
+Variables store reusable values like colors, font sizes, etc., while functions perform calculations to return a value.
+
+Example of Variables and Functions
+$primary-color: #3498db;
+$font-size: 16px;
+
+@mixin border-radius($radius) {
+  border-radius: $radius;
+}
+
+.button {
+  background-color: $primary-color;
+  color: white;
+  padding: 10px;
+  font-size: $font-size;
+  @include border-radius(5px);
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}
+
+Inheritance
+Inheritance in Sass allows a class to inherit properties from another class using the @extend directive.
+
+.card {
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+.profile-card {
+  @extend .card;
+  background-color: #f9f9f9;
+}

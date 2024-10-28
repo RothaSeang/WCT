@@ -1,0 +1,22 @@
+Task 2: Compilation
+
+CSS compilation is the process of converting preprocessor code (like Sass or LESS) into standard CSS. The preprocessor analyzes the code, processes features like variables, mixins, and nesting, and generates the final CSS file.
+
+Steps involved in compiling Sass to CSS:
+
+1. Parsing: The Sass compiler reads the Sass file and breaks it down into tokens.
+2. Processing: The compiler evaluates variables, functions, mixins, and other features.
+3. Output: The compiler generates the final CSS file, which is a plain CSS file that browsers can understand.
+Example of Sass compilation:
+// Sass code
+$primary-color: blue;
+
+.box {
+  background-color: $primary-color;
+}
+ 
+ Compiled CSS:
+
+.box {
+  background-color: blue;
+}

@@ -1,0 +1,3 @@
+Task 4: Variables, Functions, and Inheritance
+- GPT: Covers Sass variables, functions, and inheritance, using @extend to illustrate inheritance.
+- Gemini: Covers similar concepts but uses a mixin (@mixin) for inheritance and includes a lighten function for color manipulation.

@@ -1,0 +1,27 @@
+Task 1: CSS Processor
+
+A CSS processor is a tool that extends the functionality of CSS, allowing developers to write more efficient, maintainable, and feature-rich stylesheets. It pre-processes CSS code into regular CSS that browsers can understand.
+
+Popular CSS preprocessors:
+
+- Sass (Syntactically Awesome Stylesheets): Offers features like nesting, variables, functions, mixins, and more.
+- LESS (Leaner Style Sheets): Provides similar features to Sass, including variables, mixins, operations, and nesting.
+Advantages of using a CSS processor:
+
+- Improved code organization: Nesting and partials help structure CSS.
+- Increased code reusability: Variables, mixins, and functions promote code reuse.
+- Enhanced maintainability: Easier to update and manage styles.
+- Faster development: Less repetitive code and quicker style changes.
+Example of Sass simplifying CSS:
+
+// Sass code
+$primary-color: #007bff;
+
+.button {
+  background-color: $primary-color;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

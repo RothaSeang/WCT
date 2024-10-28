@@ -1,0 +1,7 @@
+Task 8: Theme
+- GPT: Shows a simple light/dark theme switch using two body classes (.light-mode and .dark-mode).
+- Gemini: Uses an $is-dark-theme variable with Sass’s if() function for toggling themes, offering more control but with added complexity.
+
+
+In summary, GPT often includes more detailed examples with slight complexity
+, while Gemini provides clear, beginner-friendly examples that focus on simplicity. 

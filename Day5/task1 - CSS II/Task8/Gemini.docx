@@ -1,0 +1,19 @@
+Task 8: Theme
+
+Theming in CSS involves creating different styles for different themes, such as light and dark mode.
+
+Example of a simple theme switcher using Sass:
+
+$light-theme-color: #fff;
+$dark-theme-color: #222;
+
+$is-dark-theme: false;
+
+body {
+  background-color: if($is-dark-theme, $dark-theme-color, $light-theme-color);
+  color: if($is-dark-theme, $light-theme-color, $dark-theme-color);
+}
+
+// ... other theme-specific styles
+
+To switch themes, you can toggle the $is-dark-theme variable using JavaScript or other techniques.

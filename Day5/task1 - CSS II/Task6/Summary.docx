@@ -1,0 +1,3 @@
+Task 6: Components
+- GPT: Explains component creation with Sass partials for organization, using a card example with partials.
+- Gemini: Uses a @mixin to demonstrate component reusability, showing two card variations to illustrate flexibility.

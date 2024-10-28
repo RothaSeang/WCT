@@ -1,0 +1,54 @@
+Task 6: Components
+
+CSS components are reusable pieces of code that encapsulate specific styles. They can be created using Sass mixins or modules.
+
+Example of a card component using Sass:
+
+@mixin card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .card-body {
+    color: #666;
+  }
+}
+
+.product-card {
+  @include card;
+}
+
+.featured-card {
+  @include card;
+  background-color: #f0f0f0;
+}
+
+Compiled CSS:
+
+.product-card, .featured-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.product-card .card-title, .featured-card .card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.product-card .card-body, .featured-card .card-body {
+  color: #666;
+}
+
+.featured-card {
+  background-color: #f0f0f0;
+}

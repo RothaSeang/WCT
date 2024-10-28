@@ -1,3 +1,27 @@
-Task 1: CSS Basics
-Definition: CSS (Cascading Style Sheets) is used to style HTML elements, providing control over layout, colors, fonts, and overall presentation.
-Role in Web Development: CSS separates content (HTML) from presentation (CSS), allowing for cleaner, more maintainable code and enabling flexible design.
+Task 6: Components
+In CSS, components are reusable blocks of code. In a Sass project, components can be structured as partials.
+
+Example: Card Component in Sass
+
+.card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 10px;
+  
+  .card-title {
+    font-size: 1.5em;
+    color: #333;
+  }
+
+  .card-description {
+    font-size: 1em;
+    color: #666;
+  }
+
+  .card-button {
+    background-color: blue;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+  }
+}

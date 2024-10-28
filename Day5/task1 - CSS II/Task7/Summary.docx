@@ -1,0 +1,3 @@
+Task 7: Grid System and Breakpoints
+- GPT: Uses a traditional 12-column grid with explicit breakpoints to explain responsive layout.
+- Gemini: Demonstrates an auto-fitting grid with repeat(auto-fit, minmax()), which is a bit more advanced but adaptable for responsive designs.

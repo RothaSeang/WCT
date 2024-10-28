@@ -1,0 +1,3 @@
+Task 1: CSS Processor
+GPT: Provides a clear overview of CSS preprocessors with examples showing how Sass can simplify complex styling using features like variables and nested selectors.
+Gemini: Similar explanation but uses simpler Sass code without nesting. Focuses on defining key preprocessor features concisely.

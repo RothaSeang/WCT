@@ -1,3 +1,49 @@
-Task 1: CSS Basics
-Definition: CSS (Cascading Style Sheets) is used to style HTML elements, providing control over layout, colors, fonts, and overall presentation.
-Role in Web Development: CSS separates content (HTML) from presentation (CSS), allowing for cleaner, more maintainable code and enabling flexible design.
+Task 1: CSS Processor
+
+A CSS processor is a tool that extends CSS with programming-like capabilities. 
+It adds features such as variables, nested rules, functions, and mixins, allowing developers to write cleaner, reusable, and more maintainable CSS code. 
+The processor then compiles this enhanced code into standard CSS for browsers.
+Examples of Popular CSS Preprocessors
+      1. Sass (Syntactically Awesome Style Sheets)
+      2. LESS (Leaner Style Sheets)
+      3. Stylus
+Advantages of Using a CSS Processor
+      - Code Reusability: Define reusable styles and use them across different components.
+      - Readability: Nested rules and variables improve the readability of CSS.
+      - Scalability: Easier to manage large projects with partials and imports.
+      - Consistency: Variables ensure consistent styling throughout.
+Example: Sass Code vs. CSS Output
+Sass Code
+$primary-color: #3498db;
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: $primary-color;
+
+  .header {
+    padding: 10px;
+    color: white;
+  }
+
+  .content {
+    margin: 20px;
+    color: darken($primary-color, 20%);
+  }
+}
+
+Compiled CSS Output 
+ 
+ body {
+  font-family: Arial, sans-serif;
+  background-color: #3498db;
+}
+
+body .header {
+  padding: 10px;
+  color: white;
+}
+
+body .content {
+  margin: 20px;
+  color: #2a7abf;
+}

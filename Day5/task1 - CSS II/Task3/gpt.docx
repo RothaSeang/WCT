@@ -1,3 +1,54 @@
-Task 1: CSS Basics
-Definition: CSS (Cascading Style Sheets) is used to style HTML elements, providing control over layout, colors, fonts, and overall presentation.
-Role in Web Development: CSS separates content (HTML) from presentation (CSS), allowing for cleaner, more maintainable code and enabling flexible design.
+Task 3: Sass Basics
+Sass Overview
+Sass is a CSS preprocessor that provides advanced features like variables, nesting, imports, partials, and more. It differs from regular CSS in that it offers these features and requires compilation into plain CSS.
+
+Example Sass Code with Nesting, Partials, and Imports
+1. Partials: Split code into small files with an underscore (_partial.scss).
+2. Imports: Use @import to combine partials into one file.
+3. Nesting: Use nested selectors within parent selectors.
+styles.scss
+
+@import 'partials/_variables';
+@import 'partials/_header';
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: $background-color;
+
+  .content {
+    color: $text-color;
+    h1 {
+      font-size: 2em;
+    }
+  }
+}
+_variables.scss
+$background-color: #f4f4f4;
+$text-color: #333;
+
+_header.scss
+.header {
+  background-color: $background-color;
+  padding: 10px;
+  color: $text-color;
+}
+
+Compiled CSS Output
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+body .content {
+  color: #333;
+}
+
+body .content h1 {
+  font-size: 2em;
+}
+
+.header {
+  background-color: #f4f4f4;
+  padding: 10px;
+  color: #333;
+}

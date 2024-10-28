@@ -1,0 +1,22 @@
+Task 7: Grid System and Breakpoints
+
+A CSS grid system is a layout system that divides a page into rows and columns. It provides a flexible way to create complex layouts.
+
+Example of a responsive layout using CSS grid:
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  // ... card styles
+}
+
+Breakpoints:
+Breakpoints are specific screen sizes at which the layout changes. In the example above, the layout changes at 768px.
