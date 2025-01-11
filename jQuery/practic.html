@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery Practice</title>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+      margin: 10px;
+      display: inline-block;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>jQuery Practice</h1>
+  <button id="change-color">Change Color</button>
+  <button id="toggle-boxes">Toggle Boxes</button>
+  <button id="load-text">Load Text</button>
+  
+  <div id="boxes">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+
+  <p id="content" class="hidden"></p>
+
+  <script>
+    $(document).ready(function () {
+      // Change color of all boxes when the button is clicked
+      $("#change-color").click(function () {
+        $(".box").each(function () {
+          const randomColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+          $(this).css("background-color", randomColor);
+        });
+      });
+
+      // Toggle visibility of boxes
+      $("#toggle-boxes").click(function () {
+        $(".box").fadeToggle(500);
+      });
+
+      // Load text into the paragraph with AJAX
+      $("#load-text").click(function () {
+        $("#content").removeClass("hidden").text("Loading...");
+        // Simulating a simple AJAX request
+        setTimeout(() => {
+          $("#content").text("This text was loaded using AJAX simulation!");
+        }, 1000);
+      });
+
+      // Add hover animation to boxes
+      $(".box").hover(
+        function () {
+          $(this).animate({ width: "120px", height: "120px" }, 300);
+        },
+        function () {
+          $(this).animate({ width: "100px", height: "100px" }, 300);
+        }
+      );
+    });
+  </script>
+</body>
+</html>
